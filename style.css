@@ -1,0 +1,45 @@
+#clockContainer{
+    position: relative;
+   /* border:2px solid red; */
+    background-image: url('clock.png');
+    width: 45vw; /* 40% width of the viewport size of screen */
+    height: 45vw;/* 40% height of the viewport size of screen */
+    /* width: 445px;
+    height: 445px; this was just some experiment with width and height for positioning clock-hands*/
+    margin: auto;/* margin-auto to center the container*/
+    background-size: 100%;/* after setting the image , it is going outside of the container, so to fix the issue we use backgroung-size:100%*/
+}
+#hour,#minute,#second{
+    position: absolute;
+    /* background-color: black; */
+    border-radius: 10px;
+    transform-origin: bottom; /*this property rotate the clock from bottom*/
+}
+
+#hour{
+    width: 1.6%;
+    height: 28%;
+    top: 22%;
+    left: 49.1%;
+    opacity: 0.8;
+    background-color: red;
+}
+
+#minute{
+    width: 1.4%;
+    height: 35%;
+    top: 14%;
+    left: 49.1%;
+    opacity: 0.8;
+    background-color: green;
+}
+
+#second{
+    width: 1%;
+    height: 42%;
+    top: 8%;
+    left: 49.3%;
+    opacity: 0.8;
+    background-color: cyan;
+}
+
